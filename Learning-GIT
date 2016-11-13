@@ -1,0 +1,36 @@
+# Learning GIT the old fashioned way
+
+So of course the first thing you do is to ask google about git tutorials, the first one is from Atlassian, an Australian company from my home town so I'm happy to consider them, but I have a niggle that because its from a vendor of git related things it's going to slant things towards bitbucket and I've in the middle of learning github related stuff and I dont really want a vendor perspective the next is from a codeschool that is using a try.github.io ... I dont want github, I want git, and they're not github and for some reason that whole thing just smells a bit to me, plus I half expect that it will be based on some kind of video tutorial from someone in their 20's and I just dont have time for that. The third one seems like the ticket .. no deep shit, people who swear are more credible .. lets try that
+
+1. Create directory
+2. cd into it
+3. type "git init"
+
+So far so good .. git init creates a hidden directory called .git with a bunch of files and directories in it. I'll eplore those later, I'm assuming it didnt create anything else in a hidden /etc/git directory or anything stupid because it would be much nicer if it were all self contained and I have faith that git wouldnt be as popular as it is with something as smelly as that. (note to self, ... self contained things smell good to me)
+
+The next step is to check out a repository .. by cloning it. I'm feeling lazy so I'll just grab the hello world repository I've already been working on .. there's also instructions on grabbing any old junk from your existing hard drive as a repo here <http://stackoverflow.com/questions/4548784/is-there-any-test-git-repository-available>
+
+4. type "git clone ../hello-world"  
+  that took about 2 seconds ... might try that from a public repo with more stuff in it. So based on the reccomendation that I could use "git clone username@host:/path/to/repository"  I tried this first
+
+  > git clone crankbird@github.com:/NetApp/netappdvp.git  
+  
+ Which failed .. completely I'm assuming the username@host:/path thing is for when you have ssh or scp set up. In any case a little more googling showed the easiest way of grabbing something out of github is to simply use the URL you get from the clone or download button so in the end I used 
+
+ > git clone https://github.com/NetApp/netappdvp.git
+
+ Which is a docker volume plugin for NetApp which I figured is going to be a non-trivial amount of code and something I should try to get my head around in any case. Turns out it was only a couple of Mb of data which copied in about 4 seconds, still it proved the point .. on to the next thing.
+
+ anyway, I went through the rest of that and kind of got a bit stuck .. I created a new file foo.txt, did a git add, and then did a git commit .. I tried doing the commit from the directory above but that didnt work, doing it from the directory where the files were made sense. Turns out the "git test" had a .git directory, and when I did the git clone, it created a subdirectory with its own .git directory .. so I'm still kind of confused about git and subdirectories .. apart from that adding and committing made sense, but pushing changes using
+
+ > git origin push master
+
+ simply didnt work, error messages from a couple of different places, so it seems the "no deep shit", seems to omit some reasonably important steps.
+
+ 
+
+
+
+
+
+
