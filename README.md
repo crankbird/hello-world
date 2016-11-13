@@ -22,3 +22,22 @@ It also says that
 >we recommend that you use a topic branch for your pull request
 
 Which makes me wonder what the heck a topic branch is meant to be
+
+## Integration with github desktop
+
+So I found some interesting stuff around push and pull requests, it makes a lot more sense when you think of github in a kind of client serever distributed editing environment .. most of the edits arent really expected to be made on the github site .. that makes sense really, most code development is going to happen on some form of desktop, it's only when you're thinking "wordpress" workflows that the push / pull thing gets confusing.
+
+the workflow really is more like this
+
+1. Grab a copy of the stuff you want to modify  
+  that copy is probably going to be sitting on your laptop
+2. Go through a bunch of local Change -> Compile -> Test loops
+3. Commit the changes to the local branch of the repository on your laptop when you've made some incremental progress
+4. Keep doing Change->Compile->Test->Commit until you think you've got something that is stable
+5. Ask the "keepers" of the thing you copied in step 1 to "pull" your changes into the stuff you copied so that your changes are now part of the thing.
+
+### Committing things from the github desktop
+
+So When you save the file from sublime (the editor I'm using) the github desktop notices the change, and you'll see "1 Uncommitted Change", if you make another change to the file .. what happens ?
+
+4. 
