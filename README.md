@@ -40,4 +40,5 @@ the workflow really is more like this
 
 So When you save the file from sublime (the editor I'm using) the github desktop notices the change, and you'll see "1 Uncommitted Change", if you make another change to the file .. what happens ?
 
-4. 
+The answer is that there is still "1 Uncommitted Change", it doesnt notice the changes in the file between each save, instead it only notices that 1 file has changed (in this case the file I'm typing in right now), that's the uncommitted change. If I'd changed two files, then there might be two uncomitted changes. Lets see what happens if I create another file in this same directory.
+
