@@ -10,3 +10,15 @@ I also like the idea of having a way of tracking the evolution of thought, allow
 ## Some modificaitons
 
 So, the tutorial kind of confused me, not sure why it's called a pull request, I would have thought it was a push request because you're asking for your contribution to be pushed into the main line of code. I've created another branch to see what would happen when you make multiple changes with commits in between each change .. hmm it seems that every change is a commit, I wonder if there is any automagic versioning of the commits, or you can tag them in some way
+
+### Some information about pull requests 
+
+So theres a hyperlink just next to the commit button which says "Learn more about pull requests" .. which takes you to <https://help.github.com/articles/about-pull-requests/> apparently its a request for others to pull the changes into the main code line that you've already pushed into a branch 
+
+>Pull requests let you tell others about changes you've pushed to a repository on GitHub
+
+It also says that 
+
+>we recommend that you use a topic branch for your pull request
+
+Which makes me wonder what the heck a topic branch is meant to be
