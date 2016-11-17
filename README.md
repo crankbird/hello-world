@@ -42,3 +42,5 @@ So When you save the file from sublime (the editor I'm using) the github desktop
 
 The answer is that there is still "1 Uncommitted Change", it doesnt notice the changes in the file between each save, instead it only notices that 1 file has changed (in this case the file I'm typing in right now), that's the uncommitted change. If I'd changed two files, then there might be two uncomitted changes. Lets see what happens if I create another file in this same directory.
 
+Adding a new empty directory didnt seem to cause the github desktop application to notice a change, so I'll try modifying this file to see if that makes a difference
+
